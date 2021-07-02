@@ -12,7 +12,7 @@ python3 api.py
 
 Then you can use in your browser local requests of transaction data to Eth Gateway such as:
 ```
-http://127.0.0.1:5000//block/<block_addr>/txs/<tx_id>
+http://127.0.0.1:5000/block/<block_addr>/txs/<tx_id>
 ```
 Where:
 `<block_addr>` may be `latest`, `pending` or integer of block index
