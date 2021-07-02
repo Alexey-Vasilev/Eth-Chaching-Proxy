@@ -75,14 +75,14 @@ app = Flask(__name__)
 
 @app.route('/')
 def index():
-    """Set up home page"""
+    """Set up dummy home page."""
     return "Home page"
 
 
 @app.route("/block/<block_number>/txs/<transaction>", methods=['GET'])
 def run_api(block_number, transaction):
-    """Process user request"""
-    # Check the number of last block
+    """Process user request."""
+    # Check the number of the last block
     last_block_number = get_last_block_number()
 
     # Convert to int if block_number is an index
